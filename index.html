@@ -37,86 +37,107 @@
     <main>
         <!-- button add -->
          <div class="flex justify-center gap-4 mt-[120px]">
-            <button class="btn  bg-[#B4F461] w-[103px]">Donation</button>
-            <button class="btn w-[103px]">History</button>
+            <button id="Donation" class="btn  bg-[#B4F461] w-[103px] hover:bg-red-300 hover:text-lg">Donation</button>
+            <button id="History" class="btn w-[103px] hover:bg-red-300 hover:text-lg">History</button>
 
          </div>
          <!-- main content -->
-          <div class="mx-14 mt-20">
-           <div class="flex  ">
-            <div class="w-1/2    p-7">
-                <img src="assets/noakhali.png" alt="">
-            </div>
-            <div class="w-1/2 p-8">
-                <h2 class="flex text-xl font-semibold gap-2 "><img src="assets/coin.png" alt=""> <span id="balance">200</span><span>BDT</span></h2>
-                <h2 class="text-xl font-bold mt-7">Donate for Flood at Noakhali, Bangladesh</h2>
-                <p class="mt-7 text-[#111111B3] font-semibold font-sans"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br>supplies and  to those affected by this disaster. Every contribution,<br>  big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
-                <input id="amount"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-7 w-full" />
-                
-               
+          <div id="main-container" >
 
-                  <label id="donate"  for="my_modal_6" class="btn w-full bg-[#B4F461] mt-7">Donate Now </label>
+            <div class="mx-14 mt-20">
+                <div class="flex  ">
+                 <div class="w-1/2    p-7">
+                     <img src="assets/noakhali.png" alt="">
+                 </div>
+                 <div class="w-1/2 p-8">
+                     <h2 class="flex text-xl font-semibold gap-2 "><img src="assets/coin.png" alt=""> <span id="balance">200</span><span>BDT</span></h2>
+                     <h2 class="text-xl font-bold mt-7">Donate for Flood at Noakhali, Bangladesh</h2>
+                     <p class="mt-7 text-[#111111B3] font-semibold font-sans"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br>supplies and  to those affected by this disaster. Every contribution,<br>  big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                     <input id="amount"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-7 w-full" />
+                     
+                    
+     
+                       <label id="donate"  for="my_modal_6" class="btn w-full bg-[#B4F461] mt-7">Donate Now </label>
+     
+     
+     
+                    
+                 </div>
+     
+                </div>
+                   
+               </div>
+               <div class="mx-14 mt-20">
+                 <div class="flex  ">
+                  <div class="w-1/2    p-7">
+                    <img src="assets/feni.png" alt="">
+                  </div>
+                  <div class="w-1/2 p-8">
+                      <h2 class="flex text-xl font-semibold gap-2 "><img src="assets/coin.png" alt=""> <span id="balance-2">600</span><span>BDT</span></h2>
+                      <h2 class="text-xl font-bold mt-7">Donate for Flood Relief in Feni,Bangladesh</h2>
+                      <p class="mt-7 text-[#111111B3] font-semibold font-sans"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                      <input id="amount-2"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-7 w-full" />
+                      <button id="donate-2"  class="btn w-full bg-[#B4F461] mt-7">Donate Now</button>
+                  </div>
+      
+                 </div>
+                    
+                </div>
+                <!-- card 3 -->
+                <div class="mx-14 mt-20">
+                 <div class="flex  ">
+                  <div class="w-1/2    p-7">
+                      <img src="assets/quota-protest.png" alt="">
+                  </div>
+                  <div class="w-1/2 p-8">
+                      <h2 class="flex text-xl font-semibold gap-2 "><img src="assets/coin.png" alt=""> <span id="balance-3" >800</span><span>BDT</span></h2>
+                      <h2 class="text-xl font-bold mt-7">Aid for Injured in the Quota Movement</h2>
+                      <p class="mt-7 text-[#111111B3] font-semibold font-sans"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                      <input id="amount-3"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-7 w-full" />
+                      <button id="donate-3"  class="btn w-full bg-[#B4F461] mt-7">Donate Now</button>
+                  </div>
+      
+                 </div>
+                    
+                </div>
+                <!-- card 4 -->
+                <div class="mx-14 mt-20">
+                 <div class="flex  ">
+                  <div class="w-1/2    p-7">
+                      <img class="rounded-lg" src="assets/z.jpg" alt="">
+                  </div>
+                  <div class="w-1/2 p-8">
+                      <h2 class="flex text-xl font-semibold gap-2 "><img class="" src="assets/coin.png" alt=""> <span id="balance-4">1800</span><span>BDT</span></h2>
+                      <h2 class="text-xl font-bold mt-7">More than 45,000 Palestinians killed in Israel’s war on Gaza</h2>
+                      <p class="mt-7 text-[#111111B3] font-semibold font-sans">Israeli strikes in Gaza have killed more than 60 Palestinians over the last 24 hours, including a journalist and rescue workers.
+                         An attack on a United Nations-run school in southern Gaza’s Khan Younis on Sunday killed at least 20 displaced Palestinians, including women and children.
+                      </p>
+                      <input id="amount-4"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-5 w-full" />
+                      <button id="donate-4"  class="btn w-full bg-[#B4F461] mt-5">Donate Now</button>
+                  </div>
+      
+                 </div>
+                    
+                </div>
 
-
-
-               
-            </div>
-
-           </div>
-              
           </div>
-          <div class="mx-14 mt-20">
-            <div class="flex  ">
-             <div class="w-1/2    p-7">
-               <img src="assets/feni.png" alt="">
-             </div>
-             <div class="w-1/2 p-8">
-                 <h2 class="flex text-xl font-semibold gap-2 "><img src="assets/coin.png" alt=""> <span id="balance-2">600</span><span>BDT</span></h2>
-                 <h2 class="text-xl font-bold mt-7">Donate for Flood Relief in Feni,Bangladesh</h2>
-                 <p class="mt-7 text-[#111111B3] font-semibold font-sans"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                 <input id="amount-2"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-7 w-full" />
-                 <button id="donate-2"  class="btn w-full bg-[#B4F461] mt-7">Donate Now</button>
-             </div>
- 
+           <!-- history Section -->
+            <div  class="mx-16 ">
+         <div id="history-container" class=" hidden bg-slate-100  border-2 border-gray-300 border-dotted
+         00 ">
+          
+
+         </div>
+
             </div>
-               
-           </div>
-           <!-- card 3 -->
-           <div class="mx-14 mt-20">
-            <div class="flex  ">
-             <div class="w-1/2    p-7">
-                 <img src="assets/quota-protest.png" alt="">
-             </div>
-             <div class="w-1/2 p-8">
-                 <h2 class="flex text-xl font-semibold gap-2 "><img src="assets/coin.png" alt=""> <span id="balance-3" >800</span><span>BDT</span></h2>
-                 <h2 class="text-xl font-bold mt-7">Aid for Injured in the Quota Movement</h2>
-                 <p class="mt-7 text-[#111111B3] font-semibold font-sans"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                 <input id="amount-3"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-7 w-full" />
-                 <button id="donate-3"  class="btn w-full bg-[#B4F461] mt-7">Donate Now</button>
-             </div>
- 
-            </div>
-               
-           </div>
-           <!-- card 4 -->
-           <div class="mx-14 mt-20">
-            <div class="flex  ">
-             <div class="w-1/2    p-7">
-                 <img class="rounded-lg" src="assets/z.jpg" alt="">
-             </div>
-             <div class="w-1/2 p-8">
-                 <h2 class="flex text-xl font-semibold gap-2 "><img class="" src="assets/coin.png" alt=""> <span id="balance-4">1800</span><span>BDT</span></h2>
-                 <h2 class="text-xl font-bold mt-7">More than 45,000 Palestinians killed in Israel’s war on Gaza</h2>
-                 <p class="mt-7 text-[#111111B3] font-semibold font-sans">Israeli strikes in Gaza have killed more than 60 Palestinians over the last 24 hours, including a journalist and rescue workers.
-                    An attack on a United Nations-run school in southern Gaza’s Khan Younis on Sunday killed at least 20 displaced Palestinians, including women and children.
-                 </p>
-                 <input id="amount-4"  type="text" placeholder="Write Donation Amount" class="input input-ghost mt-5 w-full" />
-                 <button id="donate-4"  class="btn w-full bg-[#B4F461] mt-5">Donate Now</button>
-             </div>
- 
-            </div>
-               
-           </div>
+        
+    <footer class="mt-8 md:mt-12 footer footer-center bg-yellow-50 text-base-content p-4">
+        <aside class="my-10">
+            <p>Copyright © - All right reserved by <span class="text-lg font-bold">sajedul tahsin</span></p>
+        </aside>
+    </footer>
+
+           
            <dialog id="my_modal_1" class="modal">
             <div class="modal-box text-center flex flex-col justify-center items-center">
                 <h3 class="text-3xl font-extrabold mb-8">Congrats!</h3>
