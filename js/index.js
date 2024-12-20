@@ -2,7 +2,7 @@ document.getElementById('donate').addEventListener('click',function(){
     
 
 
-const donate=Number(document.getElementById('amount').value)
+const donate=inputFiledValue('amount')
 
 const balance =Number(document.getElementById('balance').innerText)
 const total_amount=Number(document.getElementById('total-amount').innerText)
@@ -25,7 +25,7 @@ else {
 const div=document.createElement('div');
 div.classList=' font-bold space-y-4 p-6 border-2 border-gray-300 border-dotted'
 div.innerHTML=`<p class=text-2xl font-bold >${donate} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
-<p>${new Date()}</p>`
+<p>Date:${new Date()}</p>`
 const headContainer=document.getElementById('history-container');
 headContainer.insertBefore(div,headContainer.firstChild)
 
@@ -34,7 +34,7 @@ document.getElementById("my_modal_1").showModal();
 })
 // feni donate
 document.getElementById('donate-2').addEventListener('click',function(){
-    const donate=Number(document.getElementById('amount-2').value)
+    const donate=inputFiledValue('amount-2')
 
     const balance =Number(document.getElementById('balance-2').innerText)
     const total_amount=Number(document.getElementById('total-amount').innerText);
@@ -53,7 +53,7 @@ document.getElementById('donate-2').addEventListener('click',function(){
     const div=document.createElement('div');
     div.classList=' font-bold space-y-4 p-6 border-2 border-gray-300 border-dotted'
     div.innerHTML=`<p class=text-2xl font-bold >${donate} Taka is Donated for famine-2024 at feni, Bangladesh</p>
-    <p>${new Date()}</p>`
+    <p>$Date:{new Date()}</p>`
     const headContainer=document.getElementById('history-container');
     headContainer.insertBefore(div,headContainer.firstChild)
 
@@ -62,7 +62,7 @@ document.getElementById('donate-2').addEventListener('click',function(){
 
 //Aid for Injured in the Quota Movement
 document.getElementById('donate-3').addEventListener('click',function(){
-    const donatAmount=Number(document.getElementById('amount-3').value);
+    const donatAmount=inputFiledValue('amount-3');
     const balance=Number(document.getElementById('balance-3').innerText);
     const total_amount=Number(document.getElementById('total-amount').innerText);
 
@@ -83,14 +83,14 @@ document.getElementById('donate-3').addEventListener('click',function(){
    const div=document.createElement('div');
 div.classList=' font-bold space-y-4 p-6 border-2 border-gray-300 border-dotted'
 div.innerHTML=`<p class=text-2xl font-bold >${donatAmount} Taka is Donated for Injured in the Quota, Bangladesh</p>
-<p>${new Date()}</p>`
+<p> Date:${new Date()}</p>`
 const headContainer=document.getElementById('history-container');
 headContainer.insertBefore(div,headContainer.firstChild)
    document.getElementById('my_modal_1').showModal();
 })
 // kids 
 document.getElementById('donate-4').addEventListener('click',function(){
-    const donatAmount=Number(document.getElementById('amount-4').value);
+    const donatAmount=inputFiledValue('amount-4');
     const balance=Number(document.getElementById('balance-4').innerText);
     const total_amount=Number(document.getElementById('total-amount').innerText);
 
@@ -110,7 +110,7 @@ document.getElementById('donate-4').addEventListener('click',function(){
    const div=document.createElement('div');
    div.classList=' font-bold space-y-4 p-6 border-2 border-gray-300 border-dotted'
    div.innerHTML=`<p class=text-2xl font-bold >${donatAmount} Taka is Donated for  Palestinians kids gaza,  Palestinians</p>
-   <p>${new Date()}</p>`
+   <p>Date:${new Date()}</p>`
    const headContainer=document.getElementById('history-container');
    headContainer.insertBefore(div,headContainer.firstChild)
 
@@ -134,4 +134,8 @@ Donation.addEventListener('click',function(){
   document.getElementById('main-container').classList.remove('hidden');
   document.getElementById('history-container').classList.add('hidden')
 
+})
+
+document.getElementById('blog').addEventListener('click',function(){
+    window.location.href='/blog.html'
 })
