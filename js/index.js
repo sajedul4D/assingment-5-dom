@@ -1,3 +1,7 @@
+document.getElementById('blog').addEventListener('click', function () {
+    window.location.href = './blog.html'
+});
+
 document.getElementById('donate').addEventListener('click',function(){
     
 
@@ -136,6 +140,3 @@ Donation.addEventListener('click',function(){
 
 })
 
-document.getElementById('blog').addEventListener('click',function(){
-    window.location.href='/blog.html'
-})
